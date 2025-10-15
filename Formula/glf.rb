@@ -11,7 +11,7 @@ class Glf < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/igusev/glf/releases/download/v0.2.5/glf-0.2.5-darwin_amd64.tar.gz"
-      sha256 "01a4a7ea3b15cb6b79cdc6486c1e2825a62584c128cd81f807793158a9ba0648"
+      sha256 "be8f70da7585069d87a827ddf1b56a603dedbf52b39e328c6a2a0805a4eb6208"
 
       def install
         bin.install "glf"
@@ -19,7 +19,7 @@ class Glf < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/igusev/glf/releases/download/v0.2.5/glf-0.2.5-darwin_arm64.tar.gz"
-      sha256 "73daf0f43adb9f66d65d980b95572dfffe3db2ea5f37ac9a904837971462b60b"
+      sha256 "ab1880fa1d8619b1d30b0ea3f6ccfd6754c8e5913819e7c752777e7050de9248"
 
       def install
         bin.install "glf"
@@ -30,21 +30,21 @@ class Glf < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/igusev/glf/releases/download/v0.2.5/glf-0.2.5-linux_amd64.tar.gz"
-      sha256 "d337df0fc5db0587c005398122d4a078d0fb551644c81f6232ffba35f186e079"
+      sha256 "8787ac5eddc8d61e464185806593c326ce689709fea683bf18d394060d53fa40"
       def install
         bin.install "glf"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
       url "https://github.com/igusev/glf/releases/download/v0.2.5/glf-0.2.5-linux_armv6.tar.gz"
-      sha256 "70ccce14356c88b0dbc71d595005af8838c0c27e33a431891f48ecc0a8b5e395"
+      sha256 "67dc3f6ba6d0b1fdf0759a4e6f5213633e6a4c3aa8b7907a0e4a09541707ef42"
       def install
         bin.install "glf"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/igusev/glf/releases/download/v0.2.5/glf-0.2.5-linux_arm64.tar.gz"
-      sha256 "511293dd45cdcc6bcc95de7cf6aefb580864d41653d25c421dbfbfc86763e1af"
+      sha256 "ac130d043abe568cf6996bd8bd7d3a40e88d92057def7f19eec8863fbdba02b0"
       def install
         bin.install "glf"
       end
